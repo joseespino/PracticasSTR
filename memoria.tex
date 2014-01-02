@@ -1,0 +1,128 @@
+\documentclass[a4paper,11pt]{book}
+
+\usepackage{cite}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage[a4paper]{geometry} %margenes
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{float}
+\usepackage{anysize} 
+\usepackage{listings}
+\usepackage{paralist}
+\hypersetup{
+	pdfborder = {0 0 0}
+}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+\usepackage{multicol}
+\usepackage[T1]{fontenc}  
+\usepackage{textcomp}  
+\usepackage{lmodern} 
+
+\usepackage{color}
+\marginsize{3 cm}{3 cm}{2.5 cm}{2.5 cm}
+
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+\definecolor{gray75}{gray}{.75}
+ 
+
+
+\lstdefinestyle{consola}
+   {basicstyle=\bf\ttfamily,
+    backgroundcolor=\color{gray75},
+   }
+   
+\lstset{language=Java,
+basicstyle=\footnotesize,
+keywordstyle=\color{javapurple}\bfseries,
+stringstyle=\color{javared},
+commentstyle=\color{javagreen},
+morecomment=[s][\color{javadocblue}]{/**}{*/},
+numbers=left,
+numberstyle=\tiny\color{black},
+stepnumber=1,
+numbersep=10pt,
+tabsize=2,
+showspaces=false,
+showstringspaces=false,
+literate=%
+   	{á}{{\'a}}1 {Á}{{\'A}}1 %
+    {é}{{\'e}}1 {É}{{\'E}}1 %
+    {í}{{\'i}}1 {Í}{{\'I}}1 %
+    {ó}{{\'o}}1 {Ó}{{\'O}}1 %
+    {ú}{{\'u}}1 {Ú}{{\'U}}1 %
+    {ñ}{{\~n}}1 {Ñ}{{\~N}}1 %
+    {¡}{{!`}}1 {¿}{{?`}}1 %
+    {'}{\textquotesingle}1%
+    {"}{\textquotedbl}1
+}
+
+
+% Limpia el encabezado en las páginas impares vacías
+\makeatletter \def\cleardoublepage{
+\clearpage\if@twoside \ifodd\c@page\else%
+\hbox{}%
+\thispagestyle{empty}% Aquí elimina el estilo del encabezado
+\newpage%
+\if@twocolumn\hbox{}\newpage\fi\fi\fi} \makeatother
+
+
+\begin{document}
+
+
+
+\pagestyle{empty}
+\input{portada.tex}
+\cleardoublepage
+
+%%\input{previo.tex}
+\cleardoublepage
+\pagestyle{plain}
+
+\frontmatter % Introducción, índices ... 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\leftmark} % En las páginas impares, parte izquierda del encabezado, aparecerá el nombre de capítulo
+\fancyhead[RO]{\leftmark} % En las páginas pares, parte derecha del encabezado, aparecerá el nombre de sección
+
+\fancyfoot[C]{\thepage} % Números de página en las esquinas de los encabezados
+
+\renewcommand{\chaptermark}[1]{\markboth{Capítulo \thechapter. #1}{}} % Formato para el capítulo: N. Nombre
+\renewcommand{\sectionmark}[1]{\markright{\thesection. #1}} % Formato para la sección: N.M. Nombre
+
+% Renombramos las figuras y las tablas
+\renewcommand{\figurename}{Figura}
+\renewcommand{\listfigurename}{Índice de figuras}
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\listtablename}{Índice de tablas}
+\tableofcontents
+
+\addcontentsline{toc}{chapter}{Índice de figuras} %... y el de imágenes
+\listoffigures
+\addcontentsline{toc}{chapter}{Índice de tablas} %... el índice de tablas
+\listoftables
+\cleardoublepage
+
+\mainmatter % Contenido en si ...
+
+\input{introduccion.tex}
+
+
+\backmatter % Apéndices, bibliografia ...
+
+\clearpage
+%Añade la bibliografía al índice
+\addcontentsline{toc}{chapter}{Bibliografía}
+%La bibliografia aparece en el orden en que se cita, no alfabeticamente 
+\bibliographystyle{unsrt}
+\bibliography{bibliografia}
+
+
+\end{document}
