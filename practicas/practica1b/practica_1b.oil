@@ -1,0 +1,119 @@
+/*--------------------------------------------------------------------------
+ 	Practica: 1.b 															
+ 																			
+ 	Autores:																
+       - Francisco Arjona Lopez											
+       - Cristobal Castro Villegas										
+       - Jose Antonio Espino Palomares                                    
+       - Antonio Osuna Caballero                                          
+--------------------------------------------------------------------------*/
+#include "implementation.oil"
+
+CPU ATMEL_AT91SAM7S256
+{
+	OS LEJOS_OSEK
+  	{
+    	STATUS = EXTENDED;
+    	STARTUPHOOK = FALSE;
+    	ERRORHOOK = FALSE;
+    	SHUTDOWNHOOK = FALSE;
+    	PRETASKHOOK = FALSE;
+    	POSTTASKHOOK = FALSE;
+    	USEGETSERVICEID = FALSE;
+    	USEPARAMETERACCESS = FALSE;
+    	USERESSCHEDULER = FALSE;
+  	};
+
+  APPMODE sample_appmode1{};
+
+  	COUNTER Contador
+  	{
+		MINCYCLE	= 1;
+		MAXALLOWEDVALUE	= 10000;
+		TICKSPERBASE	= 1;
+ 	};
+
+  	ALARM Alarma1
+  	{
+		COUNTER		= Contador;
+		ACTION		= ACTIVATETASK {
+	    TASK 	= Calibrar;
+	};
+	AUTOSTART	= TRUE {
+	   	 ALARMTIME 	= 1;
+	    CYCLETIME	= 10;
+	    APPMODE	= sample_appmode1;
+		};
+ 	};
+
+    TASK Principal
+   	{
+    	AUTOSTART = TRUE
+		{
+		APPMODE = sample_appmode1;
+    	};
+        PRIORITY 	= 1;
+        ACTIVATION 	= 1;
+        SCHEDULE 	= FULL;
+        STACKSIZE 	= 512;
+   	};
+
+   
+    TASK GiroIzq
+	{
+        AUTOSTART = FALSE;
+    	PRIORITY 	= 2;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+	};
+
+	 TASK GiroDer
+	{
+        AUTOSTART = FALSE;
+    	PRIORITY 	= 4;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+	};
+	
+	TASK Retroceso
+	{
+    	
+        AUTOSTART = FALSE;
+    	PRIORITY 	= 3;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+  	};
+  
+	TASK Avance
+	{
+    	
+        AUTOSTART = FALSE;
+    	PRIORITY 	= 5;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+  	};
+
+    TASK Calibrar
+	{
+    	
+        AUTOSTART = FALSE;
+    	PRIORITY 	= 6;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+  	};
+ 
+   TASK Final
+   {
+    	AUTOSTART = FALSE;
+        PRIORITY 	= 7;
+        ACTIVATION 	= 1;
+        SCHEDULE 	= FULL;
+        STACKSIZE 	= 512;
+   };
+};
+

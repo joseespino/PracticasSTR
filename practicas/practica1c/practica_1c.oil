@@ -1,0 +1,123 @@
+/*--------------------------------------------------------------------------
+ 	Practica: 1.c 															
+ 																			
+ 	Autores:																
+       - Francisco Arjona Lopez											
+       - Cristobal Castro Villegas										
+       - Jose Antonio Espino Palomares                                    
+       - Antonio Osuna Caballero                                          
+--------------------------------------------------------------------------*/
+#include "implementation.oil"
+
+CPU ATMEL_AT91SAM7S256
+{
+	OS LEJOS_OSEK
+  	{
+    	STATUS = EXTENDED;
+    	STARTUPHOOK = FALSE;
+    	ERRORHOOK = FALSE;
+    	SHUTDOWNHOOK = FALSE;
+    	PRETASKHOOK = FALSE;
+    	POSTTASKHOOK = FALSE;
+    	USEGETSERVICEID = FALSE;
+    	USEPARAMETERACCESS = FALSE;
+    	USERESSCHEDULER = FALSE;
+  	};
+	
+  	APPMODE sample_appmode1{};
+
+  
+    COUNTER ContadorDistancia
+  	{
+		MINCYCLE	= 1;
+		MAXALLOWEDVALUE = 6000;
+		TICKSPERBASE	= 1;
+  	};
+  	
+	ALARM alarm1
+ 	{
+		COUNTER = ContadorDistancia;
+		ACTION = ACTIVATETASK {
+			TASK = Comprueba_Distancia;
+		};
+
+		AUTOSTART = TRUE {
+			ALARMTIME = 200; //instante en el que se inicia la alarma
+			CYCLETIME = 200; //cada 200 unidades del contador se activa
+			APPMODE = sample_appmode1;
+		};
+	};
+
+
+	
+	
+  TASK Avance
+  {
+    	AUTOSTART 	= FALSE;
+    	PRIORITY 	= 2;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+  };
+
+
+  TASK Principal
+  {
+    	AUTOSTART = TRUE
+		{
+    		APPMODE = sample_appmode1;
+    	};
+    	PRIORITY 	= 1;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+  };
+
+  TASK Comprueba_Distancia
+  {
+    	AUTOSTART 	= FALSE;
+    	PRIORITY 	= 10;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+  };
+
+  TASK Mitad_Potencia
+  {
+    	AUTOSTART 	= FALSE;
+    	PRIORITY 	= 4;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+  };
+
+  TASK Cuarto_Potencia
+  {
+    	AUTOSTART 	= FALSE;
+    	PRIORITY 	= 5;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+  };
+
+  TASK Retroceso
+  {
+    	AUTOSTART 	= FALSE;
+    	PRIORITY 	= 6;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+  };
+
+  TASK Giro_Dcha
+  {
+    	AUTOSTART 	= FALSE;
+    	PRIORITY 	= 7;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+  };
+  
+
+};
+

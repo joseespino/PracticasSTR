@@ -1,10 +1,50 @@
 \BOOKMARK [0][-]{chapter*.1}{\315ndice de figuras}{}% 1
-\BOOKMARK [0][-]{chapter*.2}{\315ndice de tablas}{}% 2
-\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 3
-\BOOKMARK [0][-]{chapter.2}{Pr\341ctica 1. Manejo b\341sico de Lego Mindstorms NXT: Sensores y Actuadores}{}% 4
-\BOOKMARK [1][-]{section.2.1}{Objetivos}{chapter.2}% 5
-\BOOKMARK [1][-]{section.2.2}{Ejercicio A}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.3}{Ejercicio B}{chapter.2}% 7
-\BOOKMARK [1][-]{section.2.4}{Ejercicio C}{chapter.2}% 8
-\BOOKMARK [0][-]{chapter.3}{Pr\341ctica 2. Manejo b\341sico de Lego Mindstorms NXT: Tareas y Comunicaciones}{}% 9
-\BOOKMARK [0][-]{chapter.4}{Pr\341ctica 3. Manejo avanzado de Lego Mindstorms NXT}{}% 10
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 2
+\BOOKMARK [0][-]{chapter.2}{Pr\341ctica 1. Manejo b\341sico de Lego Mindstorms NXT: Sensores y Actuadores}{}% 3
+\BOOKMARK [1][-]{section.2.1}{Objetivos}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.2}{Ejercicio A}{chapter.2}% 5
+\BOOKMARK [2][-]{subsection.2.2.1}{Estrategia}{section.2.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.2}{Tareas}{section.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.3}{Alarmas}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.4}{C\363digo del fichero practica1\137a.c}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.5}{C\363digo del fichero practica1\137a.oil}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.6}{Resultados}{section.2.2}% 11
+\BOOKMARK [1][-]{section.2.3}{Ejercicio B}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.3.1}{Estrategia}{section.2.3}% 13
+\BOOKMARK [2][-]{subsection.2.3.2}{Tareas}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.3}{Alarmas}{section.2.3}% 15
+\BOOKMARK [2][-]{subsection.2.3.4}{C\363digo del fichero practica1\137b.c}{section.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.3.5}{C\363digo del fichero practica1\137b.oil}{section.2.3}% 17
+\BOOKMARK [2][-]{subsection.2.3.6}{Resultados}{section.2.3}% 18
+\BOOKMARK [1][-]{section.2.4}{Ejercicio C}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.4.1}{Estrategia}{section.2.4}% 20
+\BOOKMARK [2][-]{subsection.2.4.2}{Tareas}{section.2.4}% 21
+\BOOKMARK [2][-]{subsection.2.4.3}{Alarmas}{section.2.4}% 22
+\BOOKMARK [2][-]{subsection.2.4.4}{C\363digo del fichero practica1\137c.c}{section.2.4}% 23
+\BOOKMARK [2][-]{subsection.2.4.5}{C\363digo del fichero practica1\137c.oil}{section.2.4}% 24
+\BOOKMARK [2][-]{subsection.2.4.6}{Resultados}{section.2.4}% 25
+\BOOKMARK [0][-]{chapter.3}{Pr\341ctica 2. Manejo b\341sico de Lego Mindstorms NXT: Tareas y Comunicaciones}{}% 26
+\BOOKMARK [1][-]{section.3.1}{Objetivos}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.2}{Ejercicio A}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.2.1}{Estrategia}{section.3.2}% 29
+\BOOKMARK [2][-]{subsection.3.2.2}{Tareas}{section.3.2}% 30
+\BOOKMARK [2][-]{subsection.3.2.3}{Alarmas}{section.3.2}% 31
+\BOOKMARK [2][-]{subsection.3.2.4}{C\363digo del fichero practica2\137a.c}{section.3.2}% 32
+\BOOKMARK [2][-]{subsection.3.2.5}{C\363digo del fichero practica2\137a.oil}{section.3.2}% 33
+\BOOKMARK [2][-]{subsection.3.2.6}{Resultados}{section.3.2}% 34
+\BOOKMARK [1][-]{section.3.3}{Ejercicio B}{chapter.3}% 35
+\BOOKMARK [2][-]{subsection.3.3.1}{Estrategia}{section.3.3}% 36
+\BOOKMARK [2][-]{subsection.3.3.2}{C\363digo del fichero practica\1372b\137cliente.c}{section.3.3}% 37
+\BOOKMARK [2][-]{subsection.3.3.3}{C\363digo del fichero practica\1372b\137cliente.oil}{section.3.3}% 38
+\BOOKMARK [2][-]{subsection.3.3.4}{C\363digo del fichero practica\1372b\137servidor.c}{section.3.3}% 39
+\BOOKMARK [2][-]{subsection.3.3.5}{C\363digo del fichero practica\1372b\137servidor.oil}{section.3.3}% 40
+\BOOKMARK [2][-]{subsection.3.3.6}{Resultados}{section.3.3}% 41
+\BOOKMARK [0][-]{chapter.4}{Pr\341ctica 3. Manejo avanzado de Lego Mindstorms NXT}{}% 42
+\BOOKMARK [1][-]{section.4.1}{Objetivos}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.2}{Ejercicio A}{chapter.4}% 44
+\BOOKMARK [2][-]{subsection.4.2.1}{Estrategia}{section.4.2}% 45
+\BOOKMARK [2][-]{subsection.4.2.2}{Tareas}{section.4.2}% 46
+\BOOKMARK [2][-]{subsection.4.2.3}{C\363digo del fichero practica3\137a.c}{section.4.2}% 47
+\BOOKMARK [2][-]{subsection.4.2.4}{C\363digo del fichero practica3\137oil.c}{section.4.2}% 48
+\BOOKMARK [2][-]{subsection.4.2.5}{Resultados}{section.4.2}% 49
+\BOOKMARK [0][-]{subsection.4.2.5}{Bibliograf\355a}{}% 50

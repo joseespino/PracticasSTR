@@ -1,0 +1,77 @@
+/*--------------------------------------------------------------------------
+ 	Practica: 2.b - cliente 															
+ 																			
+ 	Autores:																
+       - Francisco Arjona Lopez											
+       - Cristobal Castro Villegas										
+       - Jose Antonio Espino Palomares                                    
+       - Antonio Osuna Caballero                                          
+--------------------------------------------------------------------------*/
+
+#include "implementation.oil"
+
+CPU ATMEL_AT91SAM7S256
+{
+	OS LEJOS_OSEK
+  	{
+    	STATUS = EXTENDED;
+    	STARTUPHOOK = FALSE;
+    	ERRORHOOK = FALSE;
+    	SHUTDOWNHOOK = FALSE;
+    	PRETASKHOOK = FALSE;
+    	POSTTASKHOOK = FALSE;
+    	USEGETSERVICEID = FALSE;
+    	USEPARAMETERACCESS = FALSE;
+    	USERESSCHEDULER = FALSE;
+  	};
+
+  APPMODE sample_appmode1{};
+
+  TASK Principal
+  {
+    	AUTOSTART = TRUE
+   	{
+    		APPMODE = sample_appmode1;
+    	};
+    	PRIORITY 	= 1;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+  };
+  
+  TASK Avance
+  {
+      AUTOSTART 	= FALSE;
+    	PRIORITY 	= 6;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+  };
+
+  TASK GiroIzq
+  {
+    	AUTOSTART = FALSE;
+    	PRIORITY 	= 6;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= NON;
+    	STACKSIZE 	= 512;
+  };
+
+  TASK GiroDer
+  {
+    	AUTOSTART = FALSE;
+    	PRIORITY 	= 6;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= NON;
+    	STACKSIZE 	= 512;
+  };
+  
+  TASK Final
+  {
+    	AUTOSTART = FALSE;
+    	PRIORITY 	= 8;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= NON;
+    	STACKSIZE 	= 512;
+  };
+};

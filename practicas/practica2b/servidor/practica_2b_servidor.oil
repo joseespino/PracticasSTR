@@ -1,0 +1,83 @@
+/*--------------------------------------------------------------------------
+ 	Practica: 1.b - servidor 															
+ 																			
+ 	Autores:																
+       - Francisco Arjona Lopez											
+       - Cristobal Castro Villegas										
+       - Jose Antonio Espino Palomares                                    
+       - Antonio Osuna Caballero                                          
+--------------------------------------------------------------------------*/
+#include "implementation.oil"
+
+CPU ATMEL_AT91SAM7S256
+{
+	OS LEJOS_OSEK
+  	{
+    	STATUS = EXTENDED;
+    	STARTUPHOOK = FALSE;
+    	ERRORHOOK = FALSE;
+    	SHUTDOWNHOOK = FALSE;
+    	PRETASKHOOK = FALSE;
+    	POSTTASKHOOK = FALSE;
+    	USEGETSERVICEID = FALSE;
+    	USEPARAMETERACCESS = FALSE;
+    	USERESSCHEDULER = FALSE;
+  	};
+
+  	APPMODE sample_appmode1{};
+
+	COUNTER Contador
+  	{
+		MINCYCLE	= 1;
+		MAXALLOWEDVALUE = 6000;
+		TICKSPERBASE	= 1;
+  	};
+
+	ALARM alarm1
+ 	{
+		COUNTER = Contador;
+		ACTION = ACTIVATETASK {
+			TASK = Pulsador;
+		};
+
+		AUTOSTART = TRUE {
+			ALARMTIME = 100; //instante en el que se inicia la alarma
+			CYCLETIME = 100; //cada 200 unidades del contador se activa
+			APPMODE = sample_appmode1;
+		};
+	};
+	
+	TASK Principal
+  	{
+    	AUTOSTART = TRUE
+		{
+    		APPMODE = sample_appmode1;
+    	};
+    	
+    	PRIORITY 	= 1;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+  	};
+
+
+  	TASK Giro
+  	{
+    	AUTOSTART 	= FALSE;
+    	PRIORITY 	= 2;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= FULL;
+    	STACKSIZE 	= 512;
+  	};
+
+  	TASK Pulsador
+  	{
+    	AUTOSTART 	= FALSE;
+    	PRIORITY 	= 3;
+    	ACTIVATION 	= 1;
+    	SCHEDULE 	= NON;
+    	STACKSIZE 	= 512;
+  	};  
+  
+};
+

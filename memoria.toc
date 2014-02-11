@@ -1,11 +1,51 @@
 \select@language {spanish}
-\contentsline {chapter}{\IeC {\'I}ndice de figuras}{\es@scroman {i}}{chapter*.1}
-\contentsline {chapter}{\IeC {\'I}ndice de tablas}{\es@scroman {iii}}{chapter*.2}
+\contentsline {chapter}{\IeC {\'I}ndice de figuras}{\es@scroman {ii}}{chapter*.1}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}Pr\IeC {\'a}ctica 1. Manejo b\IeC {\'a}sico de Lego Mindstorms NXT: Sensores y Actuadores}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Objetivos}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Ejercicio A}{3}{section.2.2}
-\contentsline {section}{\numberline {2.3}Ejercicio B}{3}{section.2.3}
-\contentsline {section}{\numberline {2.4}Ejercicio C}{4}{section.2.4}
-\contentsline {chapter}{\numberline {3}Pr\IeC {\'a}ctica 2. Manejo b\IeC {\'a}sico de Lego Mindstorms NXT: Tareas y Comunicaciones}{5}{chapter.3}
-\contentsline {chapter}{\numberline {4}Pr\IeC {\'a}ctica 3. Manejo avanzado de Lego Mindstorms NXT}{7}{chapter.4}
+\contentsline {subsection}{\numberline {2.2.1}Estrategia}{3}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Tareas}{3}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Alarmas}{4}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}C\IeC {\'o}digo del fichero practica1\_a.c}{5}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}C\IeC {\'o}digo del fichero practica1\_a.oil}{7}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}Resultados}{8}{subsection.2.2.6}
+\contentsline {section}{\numberline {2.3}Ejercicio B}{9}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Estrategia}{9}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Tareas}{10}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Alarmas}{11}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}C\IeC {\'o}digo del fichero practica1\_b.c}{12}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}C\IeC {\'o}digo del fichero practica1\_b.oil}{16}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Resultados}{19}{subsection.2.3.6}
+\contentsline {section}{\numberline {2.4}Ejercicio C}{19}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Estrategia}{19}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Tareas}{19}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Alarmas}{21}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}C\IeC {\'o}digo del fichero practica1\_c.c}{21}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.5}C\IeC {\'o}digo del fichero practica1\_c.oil}{25}{subsection.2.4.5}
+\contentsline {subsection}{\numberline {2.4.6}Resultados}{30}{subsection.2.4.6}
+\contentsline {chapter}{\numberline {3}Pr\IeC {\'a}ctica 2. Manejo b\IeC {\'a}sico de Lego Mindstorms NXT: Tareas y Comunicaciones}{31}{chapter.3}
+\contentsline {section}{\numberline {3.1}Objetivos}{31}{section.3.1}
+\contentsline {section}{\numberline {3.2}Ejercicio A}{31}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Estrategia}{32}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Tareas}{32}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Alarmas}{33}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}C\IeC {\'o}digo del fichero practica2\_a.c}{33}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}C\IeC {\'o}digo del fichero practica2\_a.oil}{38}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Resultados}{40}{subsection.3.2.6}
+\contentsline {section}{\numberline {3.3}Ejercicio B}{40}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Estrategia}{40}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}C\IeC {\'o}digo del fichero practica\_2b\_cliente.c}{40}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}C\IeC {\'o}digo del fichero practica\_2b\_cliente.oil}{44}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}C\IeC {\'o}digo del fichero practica\_2b\_servidor.c}{46}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}C\IeC {\'o}digo del fichero practica\_2b\_servidor.oil}{52}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Resultados}{53}{subsection.3.3.6}
+\contentsline {chapter}{\numberline {4}Pr\IeC {\'a}ctica 3. Manejo avanzado de Lego Mindstorms NXT}{55}{chapter.4}
+\contentsline {section}{\numberline {4.1}Objetivos}{55}{section.4.1}
+\contentsline {section}{\numberline {4.2}Ejercicio A}{55}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Estrategia}{56}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Tareas}{56}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}C\IeC {\'o}digo del fichero practica3\_a.c}{56}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}C\IeC {\'o}digo del fichero practica3\_oil.c}{59}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Resultados}{60}{subsection.4.2.5}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{61}{subsection.4.2.5}
